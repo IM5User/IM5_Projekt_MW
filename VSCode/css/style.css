@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+
+    padding: 2% 5%;
+
+    font-family: 'Sometype Mono', monospace;
+}
+
+
+
+
+/* 
+TEXT
+TEXT
+TEXTs
+*/
+
+/* Main Page Titel */
+h1 {
+    /* color: rgb(255, 250, 223); */
+    color: rgb(227, 255, 54);
+}
+
+/* AI Categories */
+h2 {
+    color: aqua;
+}
+
+/* AI Tool Titel */
+h3 {
+    /* color: white; */
+    color: rgb(227, 255, 54);
+
+    margin: 0;
+}
+
+/* AI Criteria */
+h4 {
+    color: white;
+}
+
+/* Text */
+p {
+    /* color: black; */
+    /* color: white; */
+    color: rgb(220, 220, 220);
+}
+
+/* Links */
+a {
+    color: rgb(227, 255, 54);
+}
+
+
+
+
+/* 
+AI TOOLS
+AI TOOLS
+AI TOOLS
+*/
+
+/* AI TOOL Container */
+section {
+    background-color: black;
+
+    margin-top: 100px;
+    padding: 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 2em;
+    justify-content: space-around;
+
+    border-radius: 4px;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 0.5px;
+}
+
+/* Individual AI Tools */
+article {
+    /* background-color: rgb(227, 255, 54); */
+    background-color: rgb(16, 16, 16);
+
+    width: 20%;
+    min-width: 200px;
+    height: 800px;
+    padding: 20px;
+
+    flex: 0 0 21%;
+
+    border-radius: 4px;
+}
