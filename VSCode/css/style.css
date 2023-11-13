@@ -9,11 +9,17 @@ body {
 
 
 
+
+
+
 /* 
 TEXT
 TEXT
-TEXTs
+TEXT
+TEXT
 */
+                            /* TITELS, TITELS, TITELS */
+
 
 /* Main Page Titel */
 h1 {
@@ -39,6 +45,14 @@ h4 {
     color: white;
 }
 
+.h4-collapsible {
+    margin-top: 0;
+}
+
+
+                            /* FIELDS, FIELDS, FIELDS */
+
+
 /* Text */
 p {
     /* color: black; */
@@ -54,11 +68,17 @@ a {
 
 
 
+
+
+
 /* 
 AI TOOLS
 AI TOOLS
 AI TOOLS
+AI TOOLS
 */
+                            /* GRUND AUFBAU, GRUND AUFBAU, GRUND AUFBAU */
+
 
 /* AI TOOL Container */
 section {
@@ -94,6 +114,15 @@ article {
     border-radius: 4px;
 }
 
+
+                            /* BUTTONS, BUTTONS, BUTTONS */
+
+
+/* Hintergrund collapsible div */
+.content {
+    background-color: rgb(34, 34, 34);
+}
+
 /* collapsible Button */
 .collapsible {
     background-color: #eee;
@@ -105,13 +134,14 @@ article {
     text-align: left;
     outline: none;
     font-size: 15px;
-  }
+}
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .collapsible:hover {
+/* Color of button when hovering */
+.collapsible:hover {
     background-color: #ccc;
-  }
+}
 
-  .active {
+/* Color of button when Clickt */
+.active {
     background-color: #e97777;
-  }
+}
