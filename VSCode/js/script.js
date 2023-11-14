@@ -1,6 +1,6 @@
 
 // Collapsible buttons von AI Tools
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible-button");
 var i;
 
 for (i = 0; i < coll.length; i++) {
