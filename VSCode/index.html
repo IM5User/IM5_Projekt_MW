@@ -38,10 +38,10 @@
             <article id="shadow-test">
                 <h3>Midjourney</h3>
                 <div class="criteria">
-                    <button type="button" class="collapsible-button" onclick="toggleContent()">Price List</button>
-                        <div class="content" id="content_ID">
+                    <button type="button" class="collapsible-button">Price List</button>
+                        <div class="content-div">
                             <!-- <h4 class="h4-collapsible">Price</h4> -->
-                                <p>
+                                <p class="content">
                                     Free trial <br>
                                     Basic Plan: $10 per month <br>
                                     Standard Plan: $30 per month <br>
@@ -51,9 +51,9 @@
                 </div> 
 
                 <div class="criteria">
-                    <button type="button" class="collapsible-button" onclick="toggleContent()">Infos</button>
-                        <div class="content" id="content_ID">
-                                <p>
+                    <button type="button" class="collapsible-button">Infos</button>
+                        <div class="content-div">
+                                <p class="content">
                                     Midjourney is an AI-powered image generator tool that empowers individuals to unlock their creativity and embrace a wide spectrum of artistic styles. 
                                     Simply describe your vision, and Midjourney’s Discord bot will take it from there. With the ability to transform text prompts into graphics, 
                                     individuals, and teams can use the generative AI to create everything from detailed web designs to social media campaigns.
@@ -176,22 +176,16 @@
                     <a href="" target="_blank">Visit ....</a>
             </article>
         </section>
-
-
-    <script>
-            // Declare the toggleContent function globally
-            function toggleContent() {
-                var content = document.getElementById("content_ID");
-                    if (content) {
-                        content.classList.toggle("active-content", !content.classList.contains("active-content"));
-                        content.style.maxHeight = content.classList.contains("active-content") ? content.scrollHeight + "px" : "1000px";
-                }
-            }
-    
-    
-        // document.addEventListener("DOMContentLoaded", function() {
-        // });
-    </script>
+    <!-- <script>
+        // Step 1: Get the element 
+        var myElement = document.getElementById('myElement');
+          
+        // Step 2: Get the computed height
+        var computedHeight = window.getComputedStyle(myElement).height;
+          
+        // Step 3: Assign the height with CSS
+        myElement.style.height = computedHeight;
+    </script> -->
     <script src="js/script.js"></script>
     
 
