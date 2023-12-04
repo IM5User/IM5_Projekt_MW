@@ -9,22 +9,37 @@
 
     <!-- CSS Eimbinden -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- jQuery für Cursor Tracking -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Lottie files npm -->
+    <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.3.0/dist/dotlottie-player.mjs" ></script>
 </head>
 
 
 
 <body>
 
-    
 
     <h1>Welcome to the AI Tool Pool</h1>
+
+        <!-- <dotlottie-player
+            autoplay
+            controls
+            loop
+            mode="normal"
+            src="http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
+            style="width: 320px"
+        >
+    </dotlottie-player> -->
+
         <section>
             <!-- Midjourney -->
-            <article>
+            <article id="shadow-test">
                 <h3>Midjourney</h3>
-                <div class="topics">
-                    <button type="button" class="collapsible-button">Price List</button>
-                        <div class="content">
+                <div class="criteria">
+                    <button type="button" class="collapsible-button" onclick="toggleContent()">Price List</button>
+                        <div class="content" id="content_ID">
                             <!-- <h4 class="h4-collapsible">Price</h4> -->
                                 <p>
                                     Free trial <br>
@@ -35,9 +50,9 @@
                         </div>
                 </div> 
 
-                <div class="topics">
-                    <button type="button" class="collapsible-button">Infos</button>
-                        <div class="content">
+                <div class="criteria">
+                    <button type="button" class="collapsible-button" onclick="toggleContent()">Infos</button>
+                        <div class="content" id="content_ID">
                                 <p>
                                     Midjourney is an AI-powered image generator tool that empowers individuals to unlock their creativity and embrace a wide spectrum of artistic styles. 
                                     Simply describe your vision, and Midjourney’s Discord bot will take it from there. With the ability to transform text prompts into graphics, 
@@ -46,9 +61,9 @@
                         </div>
                 </div>
 
-                <div class="topics">
+                <div class="criteria">
                     <button type="button" class="collapsible-button">Best Features</button>
-                        <div class="content">
+                        <div class="content" id="content_ID">
                             <p>
                                 Easy-to-use and engaging UI <br> <br>
                                 There have been significant improvements to this app’s web graphics quality <br> <br>
@@ -162,7 +177,23 @@
             </article>
         </section>
 
+
+    <script>
+            // Declare the toggleContent function globally
+            function toggleContent() {
+                var content = document.getElementById("content_ID");
+                    if (content) {
+                        content.classList.toggle("active-content", !content.classList.contains("active-content"));
+                        content.style.maxHeight = content.classList.contains("active-content") ? content.scrollHeight + "px" : "1000px";
+                }
+            }
+    
+    
+        // document.addEventListener("DOMContentLoaded", function() {
+        // });
+    </script>
     <script src="js/script.js"></script>
+    
 
 </body>
 

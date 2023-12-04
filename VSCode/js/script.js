@@ -1,22 +1,37 @@
 
-// Collapsible buttons von AI Tools
-var coll = document.getElementsByClassName("collapsible-button");
-var i;
+// Cursor Tracker
+// jQuery($ => {
+//     let $shadow = $('#shadow-test');
+//     let shadowMax = $shadow.height();
+//     let shadowMin = shadowMax * -1;
+//     let shadowMidPoints = 
+//         [
+//             $shadow.offset().left + $shadow.width() / 2 ,
+//             $shadow.offset().top + $shadow.height() / 2
+//         ];
+  
+//     $(document).on('mousemove', e => {
+//       let shadowX = Math.min(shadowMax, Math.max(shadowMin+500, shadowMidPoints[0] - e.pageX));
+//       let shadowY = Math.min(shadowMax, Math.max(shadowMin, shadowMidPoints[1] - e.pageY));
+//       $shadow.css('box-shadow', `${shadowX}px ${shadowY}px blue`);
+//     });
+// });
 
-for (i = 0; i < coll.length; i++) {
 
-    //Die Klasse collapsible des Buttons im HTML wird auf einen Klick abgehört
-    coll[i].addEventListener("click", function() {
+// Collapsible Logik Neuste Version
+// collaps
+var collaps = document.getElementsByClassName("content");
+var collaps_button = document.getElementsByClassName("collapsible-button");
 
-        //Klasse active hinzufügen um sie mittels CSS anzusprechen
-        this.classList.toggle("active");
-
-        //Anzeige Logik
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-        content.style.display = "none";
-        } else {
-        content.style.display = "block";
-        }
-    });
+for (i = 0; i < collaps_button.length; i++) {
+    collaps_button[i].addEventListener("click", (function(index) {
+        return function() {
+            this.classList.toggle("active-button");
+            collaps[index].classList.toggle("active-content");
+        };
+    })(i));
 }
+
+console.log(collaps);
+
+

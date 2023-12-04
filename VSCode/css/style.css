@@ -5,12 +5,27 @@ body {
 
     font-family: 'Sometype Mono', monospace;
 
-    cursor: url("../assets/CustomCursor.svg") 2 2, pointer;
+    cursor: url("../assets/Cursors/CustomCursor.svg") 2 2, pointer;
 }
 
+/* #shadow-test {
+    box-shadow: -100px -100px rgb(106, 255, 0);
+    margin: 20px;
+    background-color: aliceblue;
+} */
 
 
+/* 
+Cursor
+Cursor
+Cursor 
+*/
 
+/* cursor: url("../assets/Cursors/Ok32px.svg") 5 14, pointer;
+
+.collapsible-button:active {
+    cursor: url("../assets/Cursors/Boomer64px.svg") 5 14, pointer;
+} */
 
 
 
@@ -25,8 +40,8 @@ TEXT
 
 /* Main Page Titel */
 h1 {
-    /* color: rgb(255, 250, 223); */
-    color: #e4ff38;
+    /* color: #e4ff38; */
+    color: azure;
 }
 
 /* AI Categories */
@@ -53,10 +68,9 @@ h4 {
 
 /* Text */
 p {
-    /* color: black; */
-    /* color: white; */
     color: rgb(220, 220, 220);
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* Links */
@@ -90,11 +104,6 @@ section {
     row-gap: 50px;
     column-gap: 2em;
     justify-content: space-around;
-
-    /* border-radius: 4px;
-    outline-style: solid;
-    outline-color: white;
-    outline-width: 0.5px; */
 }
 
 /* Individual AI Tools */
@@ -103,17 +112,21 @@ article {
 
     width: 20%;
     min-width: 200px;
-    height: 800px;
+    height: auto;
     padding: 20px;
 
     flex: 0 0 25%;
 
     border-radius: 4px;
+    outline-style: solid;
+    outline-color:  rgb(90, 90, 90);
+    outline-width: 1px;
 }
 
-.topics{
-    /* Kontrollfarbe
-    background-color: aqua; */
+
+.criteria {
+    /* Kontrollfarbe */
+    background-color: aqua;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -122,7 +135,19 @@ article {
 /* Hintergrund collapsible div */
 .content {
     background-color: rgb(34, 34, 34);
-    padding: 4%;
+
+
+    max-height: 1000px;
+    overflow: hidden;
+    overflow-y: auto;
+    /* transition: 1s ease; */
+    transition: max-height 1s ease;
+}
+
+.active-content {
+    max-height: 100%;
+    /* transition: 1s ease;  */
+    padding: 18px;
 }
 
 /* collapsible Button */
@@ -143,12 +168,10 @@ article {
     align-items: center;
     justify-content: space-between;
 
-    cursor: url("../assets/OK.svg") 5 14, pointer;
+    cursor: pointer;
 }
 
-.collapsible-button:active {
-    cursor: url("../assets/Boomer64px_v2.svg") 5 14, pointer;
-}
+
   
 /* Color of button when hovering */
 .collapsible-button:hover {
@@ -156,8 +179,9 @@ article {
 }
 
 /* Color of button when Clickt */
-.active {
-    background-color: rgb(60, 60, 60);
+.active-button {
+    /* background-color: rgb(60, 60, 60); */
+    background-color: rgb(211, 33, 33);
 }
 
 .collapsible-button:after {
@@ -170,7 +194,7 @@ article {
     margin-bottom: -10px;
   }
   
-  .active:after {
+  .active-button:after {
     /* Unicode character - */
     content: "\002D";
     font-size: 25px;
