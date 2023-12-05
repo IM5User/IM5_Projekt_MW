@@ -61,16 +61,12 @@ h4 {
     color: white;
 }
 
-.h4-collapsible {
-    margin-top: 0;
-}
-
-
 /* Text */
 p {
     color: rgb(220, 220, 220);
     margin-top: 0px;
     margin-bottom: 0px;
+    line-height: 1.4em;
 }
 
 /* Links */
@@ -78,6 +74,14 @@ a {
     color: rgb(227, 255, 54);
 }
 
+ul {
+    padding-left: 1em;
+}
+
+li {
+    line-height: 1.25em;
+    padding-bottom: 0.5em;
+}
 
 
 
@@ -121,8 +125,6 @@ article {
     outline-style: solid;
     outline-color:  rgb(90, 90, 90);
     outline-width: 1px;
-
-    box-shadow: 0 0px 40px 0px rgb(50, 50, 50);
 }
 
 
@@ -148,6 +150,12 @@ article {
 .active-content-div {
     padding: 18px;
     box-shadow: inset 0 -35px 40px -40px rgb(5, 5, 5);
+}
+
+.content {
+    color: rgb(220, 220, 220);
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* collapsible Button */
