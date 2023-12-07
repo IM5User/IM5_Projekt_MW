@@ -9,34 +9,37 @@
 
     <!-- CSS Eimbinden -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- jQuery für Cursor Tracking -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Lottie files npm -->
-    <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.3.0/dist/dotlottie-player.mjs" ></script>
 </head>
 
 
 
 <body>
 
+<!-- Logo -->
+    <h1>The AI <br> Tool <br> Pool</h1>
 
-    <h1>Welcome to the AI Tool Pool</h1>
+<!-- Nav Bar -->
+    <div class="nav-bar">
+        <a class="nav-link" href="#image">Image</a>
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#video">Video</a>
+    </div>
 
-        <!-- <dotlottie-player
-            autoplay
-            controls
-            loop
-            mode="normal"
-            src="http://dotlottieio.s3-website-us-east-1.amazonaws.com/sample_files/animation-external-image.lottie"
-            style="width: 320px"
-        >
-    </dotlottie-player> -->
+    
 
+
+<!-- AI Tools for Images Titel -->
+        <section class="themen" id="image">
+            <h2 class="theme-h1">AI Tools for Images</h2>
+        </section>
+
+    <!-- AI Tools for Images Content -->
         <section>
-            <!-- Midjourney -->
+        <!-- Midjourney -->
             <article id="shadow-test">
+
                 <h3>Midjourney</h3>
+
                 <div class="criteria">
                     <button type="button" class="collapsible-button">Price List</button>
                         <div class="content-div">
@@ -71,11 +74,10 @@
                         </div>
                 </div>
 
-                    <a href="https://www.midjourney.com/home/" target="_blank">Visit Midjourney</a>
+                    <a href="https://www.midjourney.com/home/" target="_blank" class="tiptext">Visit Midjourney</a>
             </article>
 
-
-            <!-- DALL-E 2 -->
+        <!-- DALL-E 2 -->
             <article id="shadow-test">
                 <h3>DALL-E 2</h3>
                 <!-- Price -->
@@ -111,11 +113,10 @@
                         </div>
                 </div>
 
-                <a href="https://openai.com/dall-e-2" target="_blank">Visit DALL-E 2</a>
+                <a href="https://openai.com/dall-e-2" target="_blank" class="tiptext">Visit DALL-E 2</a>
             </article>
-           
 
-            <!-- NightCafe -->
+        <!-- NightCafe -->
             <article id="shadow-test">
                 <h3>NightCafe</h3>
                 <!-- Price -->
@@ -158,7 +159,59 @@
                 <a href="https://creator.nightcafe.studio" target="_blank">Visit NightCafe</a>
             </article>
 
+        <!-- Bria -->
+            <article id="shadow-test">
+                <h3>Bria</h3>
+                <!-- Price -->
+                <div class="criteria">
+                    <button type="button" class="collapsible-button">Price List</button>
+                        <div class="content-div">
+                            <ul class="content">
+                                <li>Starter: Free</li>
+                                <li>Basic: $99 per month</li>
+                                <li>Pro: $290 per month</li>
+                                <li>Ultimate: Contact for pricing</li>
+                            </ul>
+                        </div>
+                </div> 
+                <!-- Infos -->
+                <div class="criteria">
+                    <button type="button" class="collapsible-button">Infos</button>
+                        <div class="content-div">
+                                <p class="content">
+                                    Bria leverages AI to create customized and ethical visual content at scale and with ease. 
+                                    It’s designed for professional teams, enterprises, artists, and developers who require visually engaging marketing copy, 
+                                    social media assets, advertising content, or any other creative project under the sun.
+                                </p>
+                        </div>
+                </div>
+                <!-- Features -->
+                <div class="criteria">
+                    <button type="button" class="collapsible-button">Best Features</button>
+                        <div class="content-div">
+                            <ul class="content">
+                                <li>Encourages ethical AI development so artists can maintain full control over their art</li>
+                                <li>Background generator and object re-generator to tailor your content down to the final detail</li>
+                                <li>Ability to adjust facial expressions, appearance, and people featured in your content</li>
+                                <li>Open access to nonprofits and academics</li>
+                            </ul>
+                        </div>
+                </div>
+                <!-- Link -->
+                <a href="https://bria.ai" target="_blank">Visit Bria</a>
+            </article>
+        </section>
 
+
+
+
+<!-- AI Tools for Video Titel -->
+        <section class="themen" id="video">
+            <h2>AI Tools for Videos</h2>
+        </section>
+
+    <!-- AI Tools for Images Content -->
+        <section>
              <!-- ... -->
              <article id="shadow-test">
                 <h3>...</h3>
@@ -195,23 +248,51 @@
                         </div>
                 </div>
                 <!-- Link -->
-                <a href=" ... " target="_blank">Visit ... </a>
+                <a href="..." target="_blank">Visit ...</a>
+            </article>
+<!-- Sample -->
+             <!-- ... -->
+             <article id="shadow-test">
+                <h3>...</h3>
+                <!-- Price -->
+                <div class="criteria">
+                    <button type="button" class="collapsible-button">Price List</button>
+                        <div class="content-div">
+                            <ul class="content">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div> 
+                <!-- Infos -->
+                <div class="criteria">
+                    <button type="button" class="collapsible-button">Infos</button>
+                        <div class="content-div">
+                                <p class="content">
+                                    
+                                </p>
+                        </div>
+                </div>
+                <!-- Features -->
+                <div class="criteria">
+                    <button type="button" class="collapsible-button">Best Features</button>
+                        <div class="content-div">
+                            <ul class="content">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+                <!-- Link -->
+                <a href="..." target="_blank">Visit ...</a>
             </article>
 
         </section>
-    <!-- <script>
-        // Step 1: Get the element 
-        var myElement = document.getElementById('myElement');
-          
-        // Step 2: Get the computed height
-        var computedHeight = window.getComputedStyle(myElement).height;
-          
-        // Step 3: Assign the height with CSS
-        myElement.style.height = computedHeight;
-    </script> -->
-    <script src="js/script.js"></script>
-    
 
+    <script src="js/script.js"></script>
 </body>
 
 

@@ -1,23 +1,4 @@
 
-// Cursor Tracker
-// jQuery($ => {
-//     let $shadow = $('#shadow-test');
-//     let shadowMax = $shadow.height();
-//     let shadowMin = shadowMax * -1;
-//     let shadowMidPoints = 
-//         [
-//             $shadow.offset().left + $shadow.width() / 2 ,
-//             $shadow.offset().top + $shadow.height() / 2
-//         ];
-  
-//     $(document).on('mousemove', e => {
-//       let shadowX = Math.min(shadowMax, Math.max(shadowMin+500, shadowMidPoints[0] - e.pageX));
-//       let shadowY = Math.min(shadowMax, Math.max(shadowMin, shadowMidPoints[1] - e.pageY));
-//       $shadow.css('box-shadow', `${shadowX}px ${shadowY}px blue`);
-//     });
-// });
-
-
 
 // Collapsible Logik Neuste Version
 var collaps = document.getElementsByClassName("content-div");
