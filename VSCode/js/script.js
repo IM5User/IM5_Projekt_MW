@@ -24,3 +24,21 @@ for (i = 0; i < collaps_button.length; i++) {
         };
     })(i));
 }
+
+
+var cookie_button = document.getElementsByClassName("cookie-button")[0];
+var pop_up = document.getElementsByClassName("cookies")[0];
+var overlay = document.getElementsByClassName("overlay")[0];
+
+function removeOverlay () {
+    cookie_button.addEventListener("click", () => {
+        overlay.classList.add("remove-opac");
+        pop_up.classList.add("remove-opac");
+        setTimeout(() => {
+            overlay.classList.add("remove");
+            pop_up.classList.add("remove");
+        }, 2000);
+    });
+}
+
+removeOverlay();
